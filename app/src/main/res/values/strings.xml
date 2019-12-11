@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">nextCalcul</string>
+    <string name="number_2">number 2</string>
+    <string name="number_1">number 1</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="times">*</string>
+    <string name="devided">-</string>
 </resources>
