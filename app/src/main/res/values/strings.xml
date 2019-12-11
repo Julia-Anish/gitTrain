@@ -6,4 +6,5 @@
     <string name="minus">-</string>
     <string name="times">*</string>
     <string name="devided">-</string>
+    <string name="result">Result</string>
 </resources>
