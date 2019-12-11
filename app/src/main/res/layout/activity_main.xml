@@ -9,6 +9,12 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/simple_caculator" />
+
     <LinearLayout
         android:id="@+id/linLay1"
         android:layout_width="match_parent"
@@ -26,9 +32,9 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/number_1"
+            android:importantForAutofill="no"
             android:inputType="numberDecimal"
-            android:padding="20dp"
-            android:importantForAutofill="no" />
+            android:padding="20dp" />
 
         <EditText
             android:id="@+id/num2"
@@ -42,16 +48,16 @@
             android:inputType="numberDecimal"
             android:padding="20dp"
             android:importantForAutofill="no" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linLay2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
         android:layout_margin="10dp"
-        >
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/plus"
@@ -98,14 +104,13 @@
         android:layout_margin="10dp">
 
         <TextView
-            android:id="@+id/textView"
-            style="@style/Widget.AppCompat.TextView"
+            android:id="@+id/res"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_horizontal"
             android:text="@string/result"
-            android:textSize="24sp"
-            android:gravity="center_horizontal"/>
+            android:textSize="24sp" />
     </LinearLayout>
 
 </LinearLayout>
