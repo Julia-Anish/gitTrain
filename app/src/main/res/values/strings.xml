@@ -5,7 +5,7 @@
     <string name="plus">+</string>
     <string name="minus">-</string>
     <string name="times">*</string>
-    <string name="devided">-</string>
+    <string name="devided">/</string>
     <string name="result">Result</string>
     <string name="simple_caculator">simple caculator</string>
 </resources>

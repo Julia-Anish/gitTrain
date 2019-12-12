@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     final int MENU_RESET_ID = 1;
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick (View v){
         float number1 = 0;
-        float number2 = 0;
+        float number2;
         float result = 0;
 
         number1 = Float.parseFloat(num1.getText().toString());
@@ -75,8 +76,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 oper = "/";
                 result = number1 / number2;
                 break;
+
         }
-        res.setText(number1 + "" + oper + "" + number2 +  "=" + result);
+        if (number2 == 0){
+            Toast toast = Toast.makeText(this, "division by zero", Toast.LENGTH_SHORT);
+            toast.show();
+            res.setText("Error");
+        }else {
+            res.setText(number1 + "" + oper + "" + number2 + "=" + result);
+        }
 
     }
     @Override
